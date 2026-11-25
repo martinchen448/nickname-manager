@@ -1,0 +1,15 @@
+# Quick gradient presets for /gradient <preset> and the GUI "Name color" page.
+# Each preset needs at least two hex colors. Edit and run /nametag reload.
+presets:
+  green-purple: ['#8FF184', '#F025FF']
+  sunset: ['#FF512F', '#F09819', '#DD2476']
+  ocean: ['#00C6FF', '#0072FF']
+  fire: ['#FFE259', '#FF4E00', '#C1121F']
+  mint: ['#A8FF78', '#78FFD6']
+  candy: ['#FF9A9E', '#FAD0C4', '#A18CD1']
+  gold: ['#FDEB71', '#F8D800', '#C79A00']
+  ice: ['#E0FFFF', '#7FDBFF', '#3D9BE9']
+  lavender: ['#E0C3FC', '#8EC5FC']
+  toxic: ['#D4FC79', '#21D190']
+  blood: ['#FF0000', '#5A0000']
+  galaxy: ['#4E54C8', '#8F94FB', '#F72585']

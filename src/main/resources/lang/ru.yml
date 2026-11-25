@@ -1,0 +1,92 @@
+﻿language:
+  code: ru
+  name: English
+
+gui:
+  main-title: "NametagEditor"
+  player-list-title: "Players (%page%/%max%)"
+  player-edit-name: "Edit: %name%"
+  player-nick-line: "Nick: %nick%"
+  status:
+    online: "Status: online"
+    offline: "Status: offline"
+  button:
+    back-title: "Back"
+    back-main-lore: "Main menu"
+    prev-title: "Previous page"
+    next-title: "Next page"
+    empty: ""
+  main:
+    self-title: "Edit own profile"
+    self-lore: "Click to edit"
+    manage-title: "Manage players"
+    manage-lore: "Online + saved offline players"
+    by-name-title: "Open by name"
+    by-name-lore: "Enter name in chat"
+    admin-only-title: "OP/Admin only"
+    admin-only-lore: "You may only edit yourself"
+  player-list:
+    by-name-lore: "Also offline / never online"
+  editor-title: "Editor: %target%"
+  editor:
+    set-nick-title: "Set nickname"
+    set-nick-lore: "Type in chat"
+    clear-nick-title: "Remove nickname"
+    clear-nick-lore: "Remove instantly"
+    set-skin-title: "Set skin source"
+    set-skin-lore: "Type player name in chat"
+    clear-skin-title: "Remove skin override"
+    clear-skin-lore: "Restore original skin"
+    info-title: "Info"
+    info-name: "Name: %value%"
+    info-nick: "Nick: %value%"
+    info-skin: "Skin: %value%"
+    back-list-title: "Back to player list"
+    back-main-title: "Back to main menu"
+
+messages:
+  join-format: "%name% joined the Game"
+  quit-format: "%name% left the Game"
+  reloaded: "NametagEditor reloaded."
+  nick-cleared: "Nickname removed."
+  nick-set-self: "Nickname set to %nickname%."
+  nick-set-other: "Nickname set: %player% -> %nickname%"
+  nick-cleared-other: "Nickname removed for %player%."
+  skin-set: "Skin source set: %player% -> %skin%"
+  skin-set-self: "Skin source set: %skin%"
+  skin-cleared: "Skin override removed for %player%."
+  skin-cleared-self: "Skin override removed."
+  input-cancelled: "Input cancelled."
+  usage:
+    nick: "Use: /nick <name|clear>"
+    nametag: "Use: /nametag <set|clear|skin|info|reload|gui>"
+    set: "Use: /nametag set <player> <nickname>"
+    clear: "Use: /nametag clear <player>"
+    skin: "Use: /nametag skin <player> <skinName|clear>"
+    info: "Use: /nametag info <player>"
+  prompt:
+    open-by-name: "Enter player name (or 'cancel'):"
+    new-nick: "Enter new nickname (or 'cancel'):"
+    new-skin: "Enter skin name (or 'clear' / 'cancel'):"
+  none:
+    nickname: "(no nickname)"
+    skin: "(no skin override)"
+    nick-short: "(no nick)"
+  info:
+    player: "Player: %player%"
+    nickname: "Nickname: %value%"
+    skin: "Skin: %value%"
+  error:
+    players-only-nick: "Only players can use /nick."
+    players-only-gui: "Only players can use this GUI."
+    no-permission: "No permission."
+    player-not-found: "Player not found."
+    self-only-edit: "You may only edit your own name."
+    self-only-view: "You may only view your own profile."
+    unknown-subcommand: "Unknown subcommand."
+    nickname-taken: "Nickname is already in use."
+    skin-empty: "Skin source must not be empty."
+    nickname-empty: "Nickname must not be empty."
+    nickname-too-long: "Nickname is too long (max %max%)."
+    nickname-invalid-chars: "Nickname contains invalid characters."
+

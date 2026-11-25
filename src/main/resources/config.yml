@@ -1,0 +1,36 @@
+language: en
+
+settings:
+  language: en
+  allow-duplicate-nicknames: true
+  command-rewrite-enabled: true
+  nicknames-in-tab-completion: true
+  use-nickname-in-death-message: true
+  refresh-customizableranks: true
+  skin-override-enabled: false
+  max-nickname-length: 16
+  nickname-pattern: "^[A-Za-z0-9_]+$"
+  join-quit-message-enabled: true
+  join-format: "%name% joined the Game"
+  quit-format: "%name% left the Game"
+
+  # Chat format (MiniMessage). <name> = styled nickname, <message> = chat message.
+  # Set chat-format-enabled to false to leave chat formatting to another plugin.
+  chat-format-enabled: true
+  chat-format: '\<<name>> <message>'
+
+  # Above-head nametag. A text display riding the player replaces the vanilla tag.
+  custom-nametag-enabled: true
+  # Hide the vanilla nametag (puts players in the main-scoreboard team "nte_hidden"
+  # unless they are already in another team).
+  hide-vanilla-nametag: true
+  nametag-y-offset: 0.3
+  nametag-background: true
+  nametag-shadow: false
+
+  # Name colors / gradients
+  # Players without a personal color get this one (empty = none). Same syntax as /namecolor.
+  default-name-color: ""
+
+messages:
+  language: en

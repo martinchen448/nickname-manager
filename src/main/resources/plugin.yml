@@ -1,0 +1,46 @@
+name: NametagEditor
+main: com.example.nametageditor.NametagEditorPlugin
+version: '2.0'
+api-version: '26.2'
+description: Nicknames, colored/gradient names and skin overrides for chat, tab, nametags, join/quit and death messages.
+softdepend: [CustomizableRanks]
+commands:
+  nametag:
+    description: Nickname and skin administration
+    usage: /nametag <set|clear|skin|color|info|reload|gui>
+    aliases: [nametageditor]
+  nick:
+    description: Set or clear your own nickname
+    usage: /nick <name|clear>
+  namecolor:
+    description: Set the color of your (or another player's) name
+    usage: /namecolor <color|#hex|preset|rainbow|clear> [styles...] [player]
+    aliases: [nickcolor, ncolor]
+  gradient:
+    description: Apply a gradient to your (or another player's) name
+    usage: /gradient <#hex1> <#hex2> [#hex3...] [styles...] [player] | /gradient <preset> [player] | /gradient list
+permissions:
+  nametageditor.admin:
+    description: Edit other players' nicknames, skins and colors; reload.
+    default: op
+    children:
+      nametageditor.self: true
+      nametageditor.color: true
+      nametageditor.color.others: true
+      nametageditor.gradient: true
+      nametageditor.gradient.others: true
+  nametageditor.self:
+    description: Use /nick and the GUI on yourself.
+    default: true
+  nametageditor.color:
+    description: Use /namecolor on yourself.
+    default: true
+  nametageditor.color.others:
+    description: Use /namecolor on other players.
+    default: op
+  nametageditor.gradient:
+    description: Use /gradient on yourself.
+    default: true
+  nametageditor.gradient.others:
+    description: Use /gradient on other players.
+    default: op
